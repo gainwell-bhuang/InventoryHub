@@ -9,7 +9,8 @@ builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
     {
-        policy.WithOrigins("*")
+        policy.AllowAnyOrigin()
+              //.WithOrigins("*")
               //.WithOrigins("http://localhost:5161") // Replace with your front-end URL
               .AllowAnyHeader()
               .AllowAnyMethod();
@@ -30,7 +31,7 @@ app.UseHttpsRedirection();
 // Enable CORS middleware
 app.UseCors();
 
-app.MapGet("/api/products", () =>
+app.MapGet("/api/productlist", () =>
 {
     return new[]
     {

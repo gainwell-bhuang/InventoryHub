@@ -1038,3 +1038,4 @@ C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.front-end
 C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.front-end\obj\Debug\net8.0\refint\InventoryHub.front-end.dll
 C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.front-end\obj\Debug\net8.0\InventoryHub.front-end.pdb
 C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.front-end\obj\Debug\net8.0\ref\InventoryHub.front-end.dll
+C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.front-end\obj\Debug\net8.0\InventoryHub.front-end.sourcelink.json

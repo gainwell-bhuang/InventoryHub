@@ -9,3 +9,4 @@ C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.Shared\ob
 C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.Shared\obj\Debug\net8.0\refint\InventoryHub.Shared.dll
 C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.Shared\obj\Debug\net8.0\InventoryHub.Shared.pdb
 C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.Shared\obj\Debug\net8.0\ref\InventoryHub.Shared.dll
+C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.Shared\obj\Debug\net8.0\InventoryHub.Shared.sourcelink.json
