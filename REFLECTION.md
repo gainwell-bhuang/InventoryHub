@@ -59,3 +59,48 @@ Copilot's suggestions for error handling (e.g., handling timeouts and invalid re
 
 ## Conclusion
 GitHub Copilot proved to be an invaluable tool throughout the development of the InventoryHub project. It accelerated the coding process, provided solutions to common challenges, and ensured adherence to best practices. By leveraging Copilot effectively, we were able to deliver a robust and optimized full-stack application.
+
+
+## Project Folder Structure
+
+Below is the folder structure of the InventoryHub project, along with a brief description of each file:
+
+```
+InventoryHub/
+├── InventoryHub.back-end                # Back-end API project
+│   ├── Program.cs                        # Entry point for the back-end application, configures services, middleware, and endpoints
+│   ├── Controllers/                      # Contains API controllers (if applicable)
+│   ├── Models/                           # Contains shared data models
+│   │   ├── Product.cs                    # Defines the Product model with properties like Id, Name, Price, Stock, and Category
+│   │   ├── Category.cs                   # Defines the Category model with properties like Id and Name
+│   ├── Properties/                       # Contains configuration files like launchSettings.json
+│   └── appsettings.json                  # Configuration file for the back-end application
+│
+├── InventoryHub.front-end               # Front-end Blazor WebAssembly project
+│   ├── Program.cs                        # Entry point for the front-end application, configures services and root components
+│   ├── Pages/                            # Contains Blazor components for the front-end
+│   │   ├── FetchProducts.razor           # Displays the list of products fetched from the back-end API
+│   ├── wwwroot/                          # Static files for the front-end application
+│   └── App.razor                         # Root component for the Blazor application
+│
+├── InventoryHub.shared                  # Shared library for models and services
+│   ├── Models/                           # Shared data models used by both front-end and back-end
+│   │   ├── Product.cs                    # Defines the Product model with properties like Id, Name, Price, Stock, and Category
+│   │   ├── Category.cs                   # Defines the Category model with properties like Id and Name
+│   ├── Services/                         # Shared services used by the front-end
+│   │   ├── ProductService.cs             # Provides methods to fetch and cache product data from the back-end API
+│
+├── README.md                             # Project documentation and reflective summary
+├── REFLECTION.md                         # Reflective summary of the development process and Copilot's role
+└── InventoryHub.sln                      # Solution file for the InventoryHub project
+```
+
+### Key Files
+- **`Program.cs` (Back-End)**: Configures the back-end API, including CORS policies, Swagger, and endpoints like `/api/productlist`.
+- **`Program.cs` (Front-End)**: Configures the Blazor WebAssembly application and registers services like `ProductService`.
+- **`ProductService.cs`**: Implements caching and API call logic to fetch product data efficiently.
+- **`FetchProducts.razor`**: Displays the list of products, including their categories, fetched from the back-end API.
+- **`Product.cs` and `Category.cs`**: Define the shared data models for products and categories, ensuring consistency between the front-end and back-end.
+
+This structure ensures a clean separation of concerns between the front-end, back-end, and shared components, making the project maintainable and scalable.
+
