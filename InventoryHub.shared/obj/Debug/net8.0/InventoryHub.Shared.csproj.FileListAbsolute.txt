@@ -1,0 +1,11 @@
+C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.Shared\bin\Debug\net8.0\InventoryHub.Shared.deps.json
+C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.Shared\bin\Debug\net8.0\InventoryHub.Shared.dll
+C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.Shared\bin\Debug\net8.0\InventoryHub.Shared.pdb
+C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.Shared\obj\Debug\net8.0\InventoryHub.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.Shared\obj\Debug\net8.0\InventoryHub.Shared.AssemblyInfoInputs.cache
+C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.Shared\obj\Debug\net8.0\InventoryHub.Shared.AssemblyInfo.cs
+C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.Shared\obj\Debug\net8.0\InventoryHub.Shared.csproj.CoreCompileInputs.cache
+C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.Shared\obj\Debug\net8.0\InventoryHub.Shared.dll
+C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.Shared\obj\Debug\net8.0\refint\InventoryHub.Shared.dll
+C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.Shared\obj\Debug\net8.0\InventoryHub.Shared.pdb
+C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.Shared\obj\Debug\net8.0\ref\InventoryHub.Shared.dll
