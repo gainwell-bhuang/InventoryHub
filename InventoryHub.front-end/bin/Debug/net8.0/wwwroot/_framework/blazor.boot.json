@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "InventoryHub.front-end",
   "resources": {
-    "hash": "sha256-AT4bKnyvKSjVoPDz6oo95t/O5vgC+kF3uhaaVJ23Blg=",
+    "hash": "sha256-idDa8WjXJWEXAebqoRIesCRB6BwssEtNHQfPwMUFkA8=",
     "jsModuleNative": {
       "dotnet.native.8.0.7.nxdppk4tk9.js": "sha256-tFsxPBbhkdn6GKNBKvCRLzrfAHdyM86odYTe0MtrwMk="
     },
@@ -208,12 +208,12 @@
       "mscorlib.wasm": "sha256-fLbZiSHBNdpHoh4EgRqMaNP5NQyIK5TEj6AXFLqo8m8=",
       "netstandard.wasm": "sha256-d4xbAE8qrKq5euUoZHPO+jkYPjlCYBzUew45MKsYKic=",
       "System.Private.CoreLib.wasm": "sha256-8yi6NcX1lkNQgV4WKjnMBYIZyKh4P+OXnXVQmgxGZD4=",
-      "InventoryHub.Shared.wasm": "sha256-Z1UVABbJzQjKs7nNufJPIXNDlMebxoUWHHv+NsGDPy4=",
-      "InventoryHub.front-end.wasm": "sha256-1BDt2k8hT+nltuLUF7xciDczntX/bi4OharKQ2o9h/E="
+      "InventoryHub.Shared.wasm": "sha256-UqdkCbQ4HfEB61Xn8gxXCQzOemquxqz5h2Lg+3ZszQA=",
+      "InventoryHub.front-end.wasm": "sha256-N6dA+YSOj5ojrgYR3+J0V3u9tt42CA+jHjN/8AP4brQ="
     },
     "pdb": {
-      "InventoryHub.Shared.pdb": "sha256-ae5qq3OSrvxltjoCDDTBRGAE9lhhA4CD4rmyfHLdzlU=",
-      "InventoryHub.front-end.pdb": "sha256-Hv0HOfXKIshD/s1Fo9bXIwNG+V+eel2DXSTdp5NmXOg="
+      "InventoryHub.Shared.pdb": "sha256-wqofTCMmyhDzc35Vxusx4fnnxNpTwN255uaC446s/jY=",
+      "InventoryHub.front-end.pdb": "sha256-wXRcOqOnhxSOMXC8MBlhzqeg241HYowQy01tWv+wa5g="
     }
   },
   "cacheBootResources": true,

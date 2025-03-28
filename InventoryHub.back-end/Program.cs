@@ -1,3 +1,5 @@
+using InventoryHub.shared.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -35,11 +37,25 @@ app.MapGet("/api/productlist", () =>
 {
     return new[]
     {
-        new { Id = 1, Name = "Laptop", Price = 1200.50, Stock = 25 },
-        new { Id = 2, Name = "Headphones", Price = 50.00, Stock = 100 }
+        new Product
+        {
+            Id = 1,
+            Name = "Laptop",
+            Price = 1200.50,
+            Stock = 25,
+            Category = new Category { Id = 101, Name = "Electronics" }
+        },
+        new Product
+        {
+            Id = 2,
+            Name = "Headphones",
+            Price = 50.00,
+            Stock = 100,
+            Category = new Category { Id = 102, Name = "Accessories" }
+        }
     };
 })
-.WithName("GetProducts")
+.WithName("GetProductList")
 .WithOpenApi();
 
 app.Run();
