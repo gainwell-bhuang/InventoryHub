@@ -34,3 +34,10 @@ C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.back-end\
 C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.back-end\obj\Debug\net8.0\InventoryHub.back-end.genruntimeconfig.cache
 C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.back-end\obj\Debug\net8.0\ref\InventoryHub.back-end.dll
 C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.back-end\obj\Debug\net8.0\InventoryHub.back-end.sourcelink.json
+C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.back-end\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.back-end\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.back-end\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.back-end\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.back-end\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.back-end\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\bhuang\source\repos\gainwell-bhuang\InventoryHub\InventoryHub.back-end\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll

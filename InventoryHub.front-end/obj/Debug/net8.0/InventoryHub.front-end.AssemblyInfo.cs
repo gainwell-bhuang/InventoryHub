@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InventoryHub.front-end")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e69ab00574fb0c3ddd155a2fb27f1cb61aa63ec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84d5a2c4b3a973eaa63e05b0da1e713f817aa815")]
 [assembly: System.Reflection.AssemblyProductAttribute("InventoryHub.front-end")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InventoryHub.front-end")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,4 +1,5 @@
 using InventoryHub.shared.Models;
+using Microsoft.Extensions.Caching.Memory;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,27 +34,42 @@ app.UseHttpsRedirection();
 // Enable CORS middleware
 app.UseCors();
 
+
+var cache = new MemoryCache(new MemoryCacheOptions());
+
 app.MapGet("/api/productlist", () =>
 {
-    return new[]
+    if (!cache.TryGetValue("ProductList", out Product[] products))
     {
-        new Product
+        products = new[]
         {
-            Id = 1,
-            Name = "Laptop",
-            Price = 1200.50,
-            Stock = 25,
-            Category = new Category { Id = 101, Name = "Electronics" }
-        },
-        new Product
+            new Product
+            {
+                Id = 1,
+                Name = "Laptop",
+                Price = 1200.50,
+                Stock = 25,
+                Category = new Category { Id = 101, Name = "Electronics" }
+            },
+            new Product
+            {
+                Id = 2,
+                Name = "Headphones",
+                Price = 50.00,
+                Stock = 100,
+                Category = new Category { Id = 102, Name = "Accessories" }
+            }
+        };
+
+        var cacheEntryOptions = new MemoryCacheEntryOptions
         {
-            Id = 2,
-            Name = "Headphones",
-            Price = 50.00,
-            Stock = 100,
-            Category = new Category { Id = 102, Name = "Accessories" }
-        }
-    };
+            AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5)
+        };
+
+        cache.Set("ProductList", products, cacheEntryOptions);
+    }
+
+    return products;
 })
 .WithName("GetProductList")
 .WithOpenApi();

@@ -1,5 +1,7 @@
 @page "/fetchproducts"
 @using InventoryHub.shared.Models
+@using InventoryHub.shared.Services
+@inject ProductService ProductService
 
 <h3>Product List</h3>
 
@@ -12,7 +14,11 @@ else if (products != null)
     <ul>
         @foreach (var product in products)
         {
-            <li>@product.Name - $@product.Price</li>
+                        <li>
+                <strong>@product.Name</strong> - $@product.Price<br />
+                Stock: @product.Stock<br />
+                Category: @product.Category.Name
+            </li>
         }
     </ul>
 }
@@ -29,39 +35,12 @@ else
     {
         try
         {
-            using var httpClient = new HttpClient
-            {
-                BaseAddress = new Uri("http://localhost:5277"), // Replace with your API's base URL
-                Timeout = TimeSpan.FromSeconds(10) // Set a timeout for the request
-            };
-
-            var response = await httpClient.GetAsync("/api/productlist");
-
-            if (response.IsSuccessStatusCode)
-            {
-                var json = await response.Content.ReadAsStringAsync();
-                products = System.Text.Json.JsonSerializer.Deserialize<Product[]>(json, new System.Text.Json.JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true
-                });
-            }
-            else
-            {
-                errorMessage = $"Failed to fetch products: {response.StatusCode} - {response.ReasonPhrase}";
-                Console.WriteLine($"Error fetching products: {response.StatusCode} - {response.ReasonPhrase}");
-            }
-        }
-        catch (TaskCanceledException)
-        {
-            errorMessage = "The request timed out. Please try again later.";
-            Console.WriteLine("Request timed out.");
+            using var httpClient = new HttpClient { BaseAddress = new Uri("http://localhost:5277") };
+            products = await ProductService.GetProductsAsync(httpClient);
         }
         catch (Exception ex)
         {
             errorMessage = $"An error occurred while fetching products: {ex.Message}";
-            Console.WriteLine($"Error fetching products: {ex.Message}");
         }
     }
-
-
 }
